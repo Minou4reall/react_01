@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feed {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feed h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feed form {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.frm {
+  margin-bottom: 10px;
+}
+.feed input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.feed button:not(.dlt) {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feed button:hover:not(.dlt) {
+  background-color: #0056b3;
+}
+
+.post {
+  position: relative;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  padding: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.post .content {
+  margin-bottom: 10px;
+}
+
+.post .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post .actions .likes {
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.post .actions .likes:hover {
+  color: #0056b3;
+}
+
+.post .actions .comments {
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.post .actions .comments:hover {
+  color: #0056b3;
+}
+
+.post .comments {
+  margin-top: 10px;
+}
+
+.comment {
+  background-color: #f8f8f8;
+  padding: 5px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.comment-form {
+  margin-top: 10px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.comment-form button  {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+.dlt {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  border: none;
+  text-decoration: underline;
+  color: #ee2f2d;
+  cursor: pointer;
+}
